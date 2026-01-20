@@ -31,20 +31,16 @@ const Main = () => {
             button: 'Go somewhere'
         }
 
-
-
         setCards([...cards, newCard])
         setTitle('')
         setSubtitle('')
         setImg('')
     }
 
-
-
     return (
         <div className='main fs-4'>
 
-            <label htmlFor="title" className="form-label">Title</label>
+            <label htmlFor="title" className="form-label text-white">Title</label>
             <input type="text " className="form-control" value={title} onChange={(e) => setTitle(e.target.value)} />
             <br></br>
 
@@ -54,16 +50,16 @@ const Main = () => {
             <br></br>
 
 
-            <label htmlFor="title" className="form-label">Subtitle</label>
+            <label htmlFor="title" className="form-label text-white">Subtitle</label>
             <input type="text" className="form-control" value={subtitle} onChange={(e) => setSubtitle(e.target.value)} />
             <br></br>
 
-            <button type="button " class="btn btn-primary" onClick={handleSubmit}>Submit</button>
+            <button type="button " className="btn btn-primary " onClick={handleSubmit}>Submit</button>
 
             <br></br>
             <br></br>
 
-            <label htmlFor="img" className="form-label mt-3">
+            <label htmlFor="img" className="form-label mt-3 text-white">
                 Image URL
             </label>
             <input
@@ -74,13 +70,7 @@ const Main = () => {
                 placeholder="Enter image URL"
             />
 
-
             <br></br>
-
-
-
-
-
 
 
             <div className='d-flex align-items-center'>
@@ -100,36 +90,27 @@ const Main = () => {
             <br></br>
             <br></br>
 
-            <h2>Subscribe to receive offers</h2>
+            <h2 className='text-white'>Subscribe to receive offers</h2>
             <br></br>
 
-            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <label for="exampleFormControlInput1" className="form-label text-white">Email address</label>
             <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
 
             <br></br>
 
-            <label for="exampleFormControlInput1" class="form-label">First Name</label>
+            <label for="exampleFormControlInput1" className="form-label text-white">First Name</label>
             <input type="email" class="form-control" id="exampleFormControlInput1" />
 
             <br></br>
 
-            <label for="exampleFormControlInput1" class="form-label">Last Name </label>
+            <label for="exampleFormControlInput1" className="form-label text-white">Last Name </label>
             <input type="email" class="form-control" id="exampleFormControlInput1" />
 
             <br></br>
 
             <button type="button " className="btn btn-primary">Submit</button>
 
-
-
-
-
-
         </div>
-
-
-
-
 
     )
 }
